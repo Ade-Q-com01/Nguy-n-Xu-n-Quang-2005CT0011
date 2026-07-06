@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đăng nhập</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.container{
+
+    width:380px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input{
+
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+
+}
+
+button{
+
+    width:100%;
+    padding:10px;
+
+    background:#2196F3;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:#1976D2;
+
+}
+
+.link{
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>ĐĂNG NHẬP</h2>
+
+<form action="loginServlet" method="post">
+
+<input
+type="text"
+name="username"
+placeholder="Tên đăng nhập"
+required>
+
+<input
+type="password"
+name="password"
+placeholder="Mật khẩu"
+required>
+
+<button type="submit">
+Đăng nhập
+</button>
+
+</form>
+
+<div class="link">
+Chưa có tài khoản?
+<a href="dangky1.jsp">Đăng ký</a>
+</div>
+
+</div>
+
+</body>
+</html>
+
